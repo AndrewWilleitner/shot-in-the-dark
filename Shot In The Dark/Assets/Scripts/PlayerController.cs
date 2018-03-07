@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -14,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed;
     public Vector3 movement;
 
+	public Text stoneCountTxt;
+
     private Transform selectedRetrievalStone;
     private Rigidbody selectedRetrievalStoneRigidbody;
 
@@ -25,6 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRigidbody = transform.GetComponent<Rigidbody>();
         cameraTransform = transform.Find("Main Camera");
+		stoneCountTxt.text = "Stones: " + stoneCount.ToString();
     }
 
     // Update is called once per frame
@@ -40,6 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         MovementInput();
         RetrieveStoneMovement();
+		stoneCountTxt.text = "Stones: " + stoneCount.ToString();
     }
 
     private void MovementInput()
