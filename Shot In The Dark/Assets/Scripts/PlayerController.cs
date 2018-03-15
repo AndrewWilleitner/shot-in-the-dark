@@ -13,9 +13,11 @@ public class PlayerController : MonoBehaviour
 
     public int stoneCount;
     public float movementSpeed;
+    public float maxThrowPower;
     public Vector3 movement;
 
-	public Text stoneCountTxt;
+    private GameObject mainCanvasObject;
+	private Text stoneCountTxt;
 
     private Transform selectedRetrievalStone;
     private Rigidbody selectedRetrievalStoneRigidbody;
@@ -28,7 +30,11 @@ public class PlayerController : MonoBehaviour
     {
         playerRigidbody = transform.GetComponent<Rigidbody>();
         cameraTransform = transform.Find("Main Camera");
-		stoneCountTxt.text = "Stones: " + stoneCount.ToString();
+
+        mainCanvasObject = GameObject.Find("Canvas");
+        stoneCountTxt = mainCanvasObject.transform.Find("StoneCountText").GetComponent<Text>();
+
+        stoneCountTxt.text = "Stones: " + stoneCount.ToString();
     }
 
     // Update is called once per frame
@@ -86,6 +92,7 @@ public class PlayerController : MonoBehaviour
         float yOffset = stone.transform.position.y - targetPos.y;
 
         float initialVelocity = (1 / Mathf.Cos(angle)) * Mathf.Sqrt((0.5f * gravity * Mathf.Pow(distance, 2)) / (distance * Mathf.Tan(angle) + yOffset));
+        initialVelocity = Mathf.Clamp(initialVelocity, 0, maxThrowPower);
 
         Vector3 velocity = new Vector3(0, initialVelocity * Mathf.Sin(angle), initialVelocity * Mathf.Cos(angle));
 
