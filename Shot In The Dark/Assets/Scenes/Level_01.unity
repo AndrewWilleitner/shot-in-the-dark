@@ -1234,7 +1234,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh12520
+  m_Name: pb_Mesh14862
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -7173,10 +7173,14 @@ Prefab:
     - target: {fileID: 4665129660483138, guid: 252d27f073aed1e47a5adfcf79939e19, type: 2}
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -17.45
 =======
       value: -17.48
 >>>>>>> ccec3aeca75d088c5042354e65b46d2334b49158
+=======
+      value: -17
+>>>>>>> parent of a436302... fix level 2 bug
       objectReference: {fileID: 0}
     - target: {fileID: 4665129660483138, guid: 252d27f073aed1e47a5adfcf79939e19, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7239,6 +7243,7 @@ Prefab:
     - target: {fileID: 120228946016023040, guid: 252d27f073aed1e47a5adfcf79939e19,
         type: 2}
       propertyPath: m_UseWorldSpace
+<<<<<<< HEAD
       value: 0
 <<<<<<< HEAD
 =======
@@ -7248,6 +7253,9 @@ Prefab:
       propertyPath: m_Positions.Array.data[2].y
       value: -0.4
 >>>>>>> ccec3aeca75d088c5042354e65b46d2334b49158
+=======
+      value: 1
+>>>>>>> parent of a436302... fix level 2 bug
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 252d27f073aed1e47a5adfcf79939e19, type: 2}
