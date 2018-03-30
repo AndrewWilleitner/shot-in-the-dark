@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,6 +113,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &47083613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 47083614}
+  m_Layer: 0
+  m_Name: CameraZoomOutPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47083614
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 47083613}
+  m_LocalRotation: {x: 0.50000006, y: 0.000000029802322, z: -0, w: 0.86602545}
+  m_LocalPosition: {x: 30, y: 45, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
 --- !u!43 &356067003
 Mesh:
   m_ObjectHideFlags: 0
@@ -330,7 +358,7 @@ Prefab:
         type: 2}
       propertyPath: cameraZoomOutPoint
       value: 
-      objectReference: {fileID: 1318694349}
+      objectReference: {fileID: 47083614}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 346e317fb7626f640bbfc34852de9565, type: 2}
   m_IsPrefabParent: 0
@@ -619,7 +647,7 @@ Transform:
   m_LocalScale: {x: 4.3626385, y: 4.362638, z: 4.362638}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1693358835
 Mesh:
