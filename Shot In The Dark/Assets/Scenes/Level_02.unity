@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2145,7 +2145,7 @@ Prefab:
     - target: {fileID: 114544980701844678, guid: 346e317fb7626f640bbfc34852de9565,
         type: 2}
       propertyPath: nextSceneName
-      value: Level_03
+      value: Mac_Level_03
       objectReference: {fileID: 0}
     - target: {fileID: 114544980701844678, guid: 346e317fb7626f640bbfc34852de9565,
         type: 2}
@@ -2248,7 +2248,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-381402
+  m_Name: pb_Mesh-166116
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
