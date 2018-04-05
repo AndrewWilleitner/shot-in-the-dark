@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4142,7 +4142,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh11610
+  m_Name: pb_Mesh12744
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -5969,6 +5969,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
+--- !u!114 &525313244 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114395465594074132, guid: 252d27f073aed1e47a5adfcf79939e19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1352011990}
+  m_Script: {fileID: 11500000, guid: 34c3e20953769124181866a3ef0bf803, type: 3}
 --- !u!43 &579581069
 Mesh:
   m_ObjectHideFlags: 0
@@ -6750,7 +6756,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh11370
+  m_Name: pb_Mesh-6032
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -9971,7 +9977,7 @@ Prefab:
     - target: {fileID: 120228946016023040, guid: 252d27f073aed1e47a5adfcf79939e19,
         type: 2}
       propertyPath: m_Positions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4665129660483138, guid: 252d27f073aed1e47a5adfcf79939e19, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10012,7 +10018,7 @@ Prefab:
     - target: {fileID: 120228946016023040, guid: 252d27f073aed1e47a5adfcf79939e19,
         type: 2}
       propertyPath: m_Positions.Array.data[2].x
-      value: -6
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 120228946016023040, guid: 252d27f073aed1e47a5adfcf79939e19,
         type: 2}
@@ -10022,7 +10028,7 @@ Prefab:
     - target: {fileID: 120228946016023040, guid: 252d27f073aed1e47a5adfcf79939e19,
         type: 2}
       propertyPath: m_Positions.Array.data[2].z
-      value: 18
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 120228946016023040, guid: 252d27f073aed1e47a5adfcf79939e19,
         type: 2}
@@ -15365,7 +15371,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-300946
+  m_Name: pb_Mesh12508
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -17173,6 +17179,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114960386197994662, guid: 346e317fb7626f640bbfc34852de9565,
+        type: 2}
+      propertyPath: powerSwitches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4031804981866034, guid: 346e317fb7626f640bbfc34852de9565, type: 2}
       propertyPath: m_LocalPosition.x
       value: 21.78
@@ -17250,6 +17261,11 @@ Prefab:
       propertyPath: nextSceneName
       value: Level_05
       objectReference: {fileID: 0}
+    - target: {fileID: 114960386197994662, guid: 346e317fb7626f640bbfc34852de9565,
+        type: 2}
+      propertyPath: powerSwitches.Array.data[1]
+      value: 
+      objectReference: {fileID: 525313244}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 346e317fb7626f640bbfc34852de9565, type: 2}
   m_IsPrefabParent: 0
