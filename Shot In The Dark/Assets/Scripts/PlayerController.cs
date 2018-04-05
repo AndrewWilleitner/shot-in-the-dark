@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
         ThrowStoneClick();
         RetrieveStoneClick();
         RotateCameraInput();
+		ResetLevel();
     }
 
     // Update is called once per physics frame
@@ -176,4 +178,12 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(new Vector3(0,-45, 0));
         }
     }
+
+	private void ResetLevel()
+	{
+		if (Input.GetKeyDown ("r")) 
+		{
+			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+		}
+	}
 }
