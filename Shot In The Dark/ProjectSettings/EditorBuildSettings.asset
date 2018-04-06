@@ -4,4 +4,37 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Level_00.unity
+    guid: 1bb6b7ba3ec64c24dadf3969d14b71be
+  - enabled: 1
+    path: Assets/Scenes/Level_01.unity
+    guid: bf69bcab77be63846901f890d0eae062
+  - enabled: 1
+    path: Assets/Scenes/Level_02.unity
+    guid: 885e2cb92c8735a4baacc43d23099d1c
+  - enabled: 1
+    path: Assets/Scenes/Level_04.unity
+    guid: 3c7f4b5e5f45d3348891ffc95be621c1
+  - enabled: 1
+    path: Assets/Scenes/Level_05.unity
+    guid: 038738983942dca449058ce8fd4f6aaa
+  - enabled: 1
+    path: Assets/Scenes/Level_06.unity
+    guid: 5b621c2ff5bdd264eb1f5abc95dfad95
+  - enabled: 1
+    path: Assets/Scenes/Level_Load_Screen.unity
+    guid: ffcb96f5110c7c04aa806f8653e8096e
+  - enabled: 1
+    path: Assets/Scenes/Mac_Level_03.unity
+    guid: f475da36cabd5374f8222dae57bec5e6
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: b18ce4c9abb058b41a8e7e2bf77b5e78
+  - enabled: 1
+    path: Assets/Scenes/Start_Screen.unity
+    guid: b62d3bfecd91ec24eb007086323d7df3
+  - enabled: 1
+    path: Assets/Scenes/Test Level 2.unity
+    guid: 3de5ea2cb739001489a8cd84cddc0485
