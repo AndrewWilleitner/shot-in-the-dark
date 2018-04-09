@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private Transform selectedRetrievalStone;
     private Rigidbody selectedRetrievalStoneRigidbody;
 
+    private Quaternion desiredCameraRotation;
 
 
 
@@ -36,21 +37,23 @@ public class PlayerController : MonoBehaviour
         stoneCountTxt = mainCanvasObject.transform.Find("StoneCountText").GetComponent<Text>();
 
         stoneCountTxt.text = "Stones: " + stoneCount.ToString();
+        desiredCameraRotation = transform.rotation;
     }
 
     // Update is called once per frame
     void Update()
     {
+        MovementInput();
+        RotateCameraInput();
         ThrowStoneClick();
         RetrieveStoneClick();
-        RotateCameraInput();
-		ResetLevel();
+        ResetLevel();
     }
 
     // Update is called once per physics frame
     void FixedUpdate()
     {
-        MovementInput();
+        MovementAndRotation();
         RetrieveStoneMovement();
 		stoneCountTxt.text = "Stones: " + stoneCount.ToString();
     }
@@ -66,11 +69,15 @@ public class PlayerController : MonoBehaviour
             movement += cameraTransform.right;
         if (Input.GetKey("a"))
             movement += -cameraTransform.right;
+    }
 
+
+    private void MovementAndRotation()
+    {
         movement.y = 0;
         movement = movement.normalized * movementSpeed * Time.deltaTime;
-
         playerRigidbody.MovePosition(transform.position + movement);
+        playerRigidbody.MoveRotation(Quaternion.Lerp(transform.rotation, desiredCameraRotation, 10f * Time.deltaTime));
     }
 
 
@@ -122,11 +129,12 @@ public class PlayerController : MonoBehaviour
 
     private void RetrieveStoneClick()
     {
+        int stoneLayerMask = 1 << LayerMask.NameToLayer("GlowStone");
         if (Input.GetMouseButtonDown(1))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, stoneLayerMask))
             {
                 if (hit.rigidbody)
                 {
@@ -162,7 +170,7 @@ public class PlayerController : MonoBehaviour
         if (collision.transform.tag == "GlowStone")
         {
             stoneCount++;
-            Destroy(collision.transform.gameObject);
+            collision.transform.gameObject.GetComponent<GlowStoneController>().SelfDestroy();
         }
     }
 
@@ -171,17 +179,18 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown("e"))
         {
-            transform.Rotate(new Vector3(0,45,0));
+            desiredCameraRotation = Quaternion.Euler(desiredCameraRotation.eulerAngles + Vector3.up * 45);
         }
         if (Input.GetKeyDown("q"))
         {
-            transform.Rotate(new Vector3(0,-45, 0));
+            desiredCameraRotation = Quaternion.Euler(desiredCameraRotation.eulerAngles + Vector3.up * -45);
         }
     }
 
-	private void ResetLevel()
+
+    private void ResetLevel()
 	{
-		if (Input.GetKeyDown ("r")) 
+		if (Input.GetKeyDown ("r") || transform.position.y < -50f) 
 		{
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 		}

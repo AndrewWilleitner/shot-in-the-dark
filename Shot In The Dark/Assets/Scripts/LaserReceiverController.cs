@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchTrigger : MonoBehaviour {
+public class LaserReceiverController : MonoBehaviour {
 
     private Power power;
     private LineRenderer lineRender;
@@ -22,21 +22,12 @@ public class SwitchTrigger : MonoBehaviour {
             lineRender.material = powerOffMaterial;
     }
 
-    void OnTriggerEnter(Collider coll)
-    {
-        if (coll.transform.tag == "GlowStone")
-        {
-            power.powered = true;
-            lineRender.material = powerOnMaterial;
-        }
-    }
 
-    void OnTriggerExit(Collider coll)
+    void Update()
     {
-        if (coll.transform.tag == "GlowStone")
-        {
-            power.powered = false;
+        if (power.powered)
+            lineRender.material = powerOnMaterial;
+        else
             lineRender.material = powerOffMaterial;
-        }
     }
 }

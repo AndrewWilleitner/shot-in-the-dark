@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4541246212648242}
+  - component: {fileID: 114123587999554350}
   - component: {fileID: 65997623412082666}
   - component: {fileID: 108207274527656000}
   - component: {fileID: 54194961592504472}
@@ -148,3 +149,14 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114123587999554350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1779654219822794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178b790af93dca244984b89ce6d039bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
