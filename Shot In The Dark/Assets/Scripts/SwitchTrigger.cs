@@ -6,15 +6,19 @@ public class SwitchTrigger : MonoBehaviour {
 
     private Power power;
     private LineRenderer lineRender;
+    private AudioSource source;
 
     public Material powerOnMaterial;
     public Material powerOffMaterial;
+    public AudioClip switchOnSound;
+    public AudioClip switchOffSound;
 
     // Use this for initialization
     void Start()
     {
         power = transform.GetComponent<Power>();
         lineRender = transform.GetComponent<LineRenderer>();
+        source = GetComponent<AudioSource>();
 
         if (power.powered)
             lineRender.material = powerOnMaterial;
@@ -26,6 +30,7 @@ public class SwitchTrigger : MonoBehaviour {
     {
         if (coll.transform.tag == "GlowStone")
         {
+            source.PlayOneShot(switchOnSound);
             power.powered = true;
             lineRender.material = powerOnMaterial;
         }
@@ -35,6 +40,7 @@ public class SwitchTrigger : MonoBehaviour {
     {
         if (coll.transform.tag == "GlowStone")
         {
+            source.PlayOneShot(switchOffSound);
             power.powered = false;
             lineRender.material = powerOffMaterial;
         }
