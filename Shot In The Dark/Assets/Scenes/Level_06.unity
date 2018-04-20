@@ -29828,6 +29828,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerOnMaterial: {fileID: 2100000, guid: d53f9adba0d15564bac6d3f968ea8b6f, type: 2}
   powerOffMaterial: {fileID: 2100000, guid: b94fbd28671558c428d5641e6d16e4e2, type: 2}
+  switchOnSound: {fileID: 0}
+  switchOffSound: {fileID: 0}
 --- !u!4 &1375226965
 Transform:
   m_ObjectHideFlags: 0
@@ -31637,6 +31639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerOnMaterial: {fileID: 2100000, guid: d53f9adba0d15564bac6d3f968ea8b6f, type: 2}
   powerOffMaterial: {fileID: 2100000, guid: b94fbd28671558c428d5641e6d16e4e2, type: 2}
+  switchOnSound: {fileID: 0}
+  switchOffSound: {fileID: 0}
 --- !u!4 &1858275676
 Transform:
   m_ObjectHideFlags: 0
@@ -31737,7 +31741,7 @@ Prefab:
     - target: {fileID: 114544980701844678, guid: 346e317fb7626f640bbfc34852de9565,
         type: 2}
       propertyPath: nextSceneName
-      value: Level_04
+      value: Level_07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 346e317fb7626f640bbfc34852de9565, type: 2}
