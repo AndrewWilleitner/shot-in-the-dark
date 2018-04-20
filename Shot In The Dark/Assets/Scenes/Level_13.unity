@@ -17300,7 +17300,7 @@ Prefab:
     - target: {fileID: 114544980701844678, guid: 346e317fb7626f640bbfc34852de9565,
         type: 2}
       propertyPath: nextSceneName
-      value: Level_05
+      value: Start_Screen
       objectReference: {fileID: 0}
     - target: {fileID: 114960386197994662, guid: 346e317fb7626f640bbfc34852de9565,
         type: 2}
