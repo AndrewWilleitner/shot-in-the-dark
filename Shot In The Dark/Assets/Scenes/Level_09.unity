@@ -1694,7 +1694,7 @@ MonoBehaviour:
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
   m_SelectedEdges: []
-  m_selectedTriangles: 2f000000
+  m_selectedTriangles: 
 --- !u!33 &148547258
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15616,7 +15616,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4175635635574404, guid: 2c9fc500e4467e940b7a2ca70155d96e, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 33004054630735274, guid: 2c9fc500e4467e940b7a2ca70155d96e,
         type: 2}
@@ -15670,7 +15670,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
 --- !u!1 &1540023356
 GameObject:
