@@ -3562,7 +3562,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-624026
+  m_Name: pb_Mesh-9762
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -6356,6 +6356,16 @@ Prefab:
       propertyPath: powerSwitches.Array.data[7]
       value: 
       objectReference: {fileID: 1523017515}
+    - target: {fileID: 114544980701844678, guid: 346e317fb7626f640bbfc34852de9565,
+        type: 2}
+      propertyPath: nextSceneName
+      value: Level_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544980701844678, guid: 346e317fb7626f640bbfc34852de9565,
+        type: 2}
+      propertyPath: cameraZoomOutPoint
+      value: 
+      objectReference: {fileID: 91845933}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 346e317fb7626f640bbfc34852de9565, type: 2}
   m_IsPrefabParent: 0

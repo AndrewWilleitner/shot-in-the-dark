@@ -13,6 +13,9 @@ public class GoalController : MonoBehaviour {
     public Transform cameraZoomOutPoint;
     public string nextSceneName;
 
+	private AudioSource source;
+	public AudioClip goalSound;
+
 
     // Use this for initialization
     void Start ()
@@ -26,6 +29,8 @@ public class GoalController : MonoBehaviour {
         RenderSettings.ambientIntensity = 0;
         RenderSettings.reflectionIntensity = 0;
         mainLight.intensity = 0;
+
+		source = GetComponent<AudioSource> ();
     }
 	
 	// Update is called once per frame
@@ -38,7 +43,6 @@ public class GoalController : MonoBehaviour {
     private IEnumerator ZoomOutCamera()
     {
         
-
         Vector3 startPos = cameraTransform.position;
         Quaternion startRot = cameraTransform.rotation;
         float t = 0f;
@@ -64,12 +68,11 @@ public class GoalController : MonoBehaviour {
         SceneManager.LoadScene(nextSceneName);
     }
 
-
     private void OnTriggerEnter(Collider coll)
     {
         if (coll.transform.tag == "Player")
         {
-            cameraTransform.parent = null;
+			cameraTransform.parent = null;
             Destroy(playerTransform.gameObject);
             StartCoroutine("ZoomOutCamera");
         }

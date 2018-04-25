@@ -7,8 +7,11 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 
+<<<<<<< HEAD
 	Animator anim;
 	private Transform modelTransform;
+=======
+>>>>>>> 9d359399b11b4df34d0de10a7a858bb071abea7f
     private Rigidbody playerRigidbody;
     private Transform cameraTransform;
 
@@ -33,9 +36,12 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+<<<<<<< HEAD
 
 		anim = transform.Find ("sitdT-Pose").GetComponent<Animator> ();
 		modelTransform = transform.Find ("sitdT-Pose").transform;
+=======
+>>>>>>> 9d359399b11b4df34d0de10a7a858bb071abea7f
         playerRigidbody = transform.GetComponent<Rigidbody>();
         cameraTransform = transform.Find("Main Camera");
 
@@ -84,6 +90,7 @@ public class PlayerController : MonoBehaviour
         movement = movement.normalized * movementSpeed * Time.deltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
         playerRigidbody.MoveRotation(Quaternion.Lerp(transform.rotation, desiredCameraRotation, 10f * Time.deltaTime));
+<<<<<<< HEAD
 
 		if (movement == Vector3.zero) {
 			anim.SetBool ("walk", false);
@@ -92,6 +99,8 @@ public class PlayerController : MonoBehaviour
 			anim.SetBool ("walk", true);
 		}
 		modelTransform.rotation = desiredModelRotation;
+=======
+>>>>>>> 9d359399b11b4df34d0de10a7a858bb071abea7f
     }
 
 
@@ -99,8 +108,6 @@ public class PlayerController : MonoBehaviour
     {
         if (stoneCount <= 0)
             return;
-
-		anim.SetTrigger("throw");
 
         GameObject stone = Instantiate(GlowStonePrefab, transform.position + new Vector3(0f, 2.5f, 0f), Quaternion.identity);
         Rigidbody stoneRigidbody = stone.transform.GetComponent<Rigidbody>();
