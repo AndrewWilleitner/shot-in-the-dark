@@ -1311,6 +1311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraZoomOutPoint: {fileID: 0}
   nextSceneName: Test Level 2
+  goalSound: {fileID: 8300000, guid: 71546902670c38544a77e5a031246954, type: 3}
 --- !u!114 &114678144775833918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1362,6 +1363,7 @@ MonoBehaviour:
   powerSwitches:
   - {fileID: 0}
   doorPowered: 0
+  doorSound: {fileID: 8300000, guid: 895fbb5bed22d8647be3a9fb841d4448, type: 3}
 --- !u!114 &114998668857497148
 MonoBehaviour:
   m_ObjectHideFlags: 1
