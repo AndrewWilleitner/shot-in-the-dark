@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 54194961592504472}
   - component: {fileID: 33094454104063978}
   - component: {fileID: 23818447818100594}
-  - component: {fileID: 82395685361831580}
   m_Layer: 8
   m_Name: GlowStone
   m_TagString: GlowStone
@@ -114,86 +113,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &82395685361831580
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1779654219822794}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!108 &108207274527656000
 Light:
   m_ObjectHideFlags: 1
@@ -241,8 +160,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178b790af93dca244984b89ce6d039bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbLandingSound: {fileID: 8300000, guid: 9ca070ed081a05147a7daf1870143f37, type: 3}
-  orbPickupSound1: {fileID: 8300000, guid: cbc98c85e2146bf4f96eb23a45e969e2, type: 3}
-  orbPickupSound2: {fileID: 8300000, guid: 77fb678b37740214f8585f89cc548760, type: 3}
-  orbPickupSound3: {fileID: 8300000, guid: a2a4f31de2c751d4a9f19dbf7fff0f93, type: 3}
-  orbPickupSound4: {fileID: 8300000, guid: c1a35ce11e6329544bd406cea2b15e5e, type: 3}

@@ -5,8 +5,7 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - doorSound: {fileID: 8300000, guid: 895fbb5bed22d8647be3a9fb841d4448, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
