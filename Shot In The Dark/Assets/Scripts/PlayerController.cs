@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 
-	Animator anim;
     private Rigidbody playerRigidbody;
     private Transform cameraTransform;
 
@@ -31,8 +30,6 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-		anim = transform.Find ("sitdT-Pose").GetComponent<Animator> ();
         playerRigidbody = transform.GetComponent<Rigidbody>();
         cameraTransform = transform.Find("Main Camera");
 
@@ -81,11 +78,6 @@ public class PlayerController : MonoBehaviour
         movement = movement.normalized * movementSpeed * Time.deltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
         playerRigidbody.MoveRotation(Quaternion.Lerp(transform.rotation, desiredCameraRotation, 10f * Time.deltaTime));
-
-		if (movement == Vector3.zero) 
-			anim.SetBool ("walk", false);
-		else
-			anim.SetBool ("walk", true);
     }
 
 
@@ -93,8 +85,6 @@ public class PlayerController : MonoBehaviour
     {
         if (stoneCount <= 0)
             return;
-
-		anim.SetTrigger("throw");
 
         GameObject stone = Instantiate(GlowStonePrefab, transform.position + new Vector3(0f, 2.5f, 0f), Quaternion.identity);
         Rigidbody stoneRigidbody = stone.transform.GetComponent<Rigidbody>();
