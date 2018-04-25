@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 33455022747703554}
   - component: {fileID: 136733699910296586}
   - component: {fileID: 23310565324165150}
+  - component: {fileID: 95882168530432354}
   m_Layer: 9
   m_Name: Capsule
   m_TagString: Player
@@ -73,6 +74,7 @@ GameObject:
   - component: {fileID: 4687076260302346}
   - component: {fileID: 54184417197349524}
   - component: {fileID: 114723677187899454}
+  - component: {fileID: 95690900856699668}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -100,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1857736044189972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -2}
+  m_LocalPosition: {x: 10, y: -17, z: 14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4286478274641872}
@@ -211,7 +213,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1447110751573666}
-  m_Mesh: {fileID: 4300000, guid: 089714847feb65f4ab0b8c386d012294, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 9d4976456a6c50345b80d819bbe95c53, type: 3}
 --- !u!54 &54184417197349524
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -234,6 +236,40 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1757722776091394}
   m_Enabled: 1
+--- !u!95 &95690900856699668
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857736044189972}
+  m_Enabled: 0
+  m_Avatar: {fileID: 9000000, guid: 089714847feb65f4ab0b8c386d012294, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1a0a451bf012b85498d2940c804634d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95882168530432354
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1447110751573666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 9d4976456a6c50345b80d819bbe95c53, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1a0a451bf012b85498d2940c804634d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108653282291645112
 Light:
   m_ObjectHideFlags: 1

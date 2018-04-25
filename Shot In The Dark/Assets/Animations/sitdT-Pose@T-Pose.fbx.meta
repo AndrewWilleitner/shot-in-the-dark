@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b53215f1e0e7ac94aaf2c72a2500bb78
-timeCreated: 1524606234
+guid: 9d4976456a6c50345b80d819bbe95c53
+timeCreated: 1524695074
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -204,7 +204,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -253,10 +253,10 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: spine1
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
