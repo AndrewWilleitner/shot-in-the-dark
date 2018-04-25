@@ -160,7 +160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4687076260302346, guid: 5ebc327ca4e412b45aa2940c7461076a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -17
+      value: -16.68
       objectReference: {fileID: 0}
     - target: {fileID: 4687076260302346, guid: 5ebc327ca4e412b45aa2940c7461076a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1172,28 +1172,6 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!1 &866235730 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1447110751573666, guid: 5ebc327ca4e412b45aa2940c7461076a,
-    type: 2}
-  m_PrefabInternal: {fileID: 183570586}
---- !u!95 &866235735
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 866235730}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1a0a451bf012b85498d2940c804634d7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &939669276
 Prefab:
   m_ObjectHideFlags: 0
@@ -2551,28 +2529,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1323116587 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1857736044189972, guid: 5ebc327ca4e412b45aa2940c7461076a,
-    type: 2}
-  m_PrefabInternal: {fileID: 183570586}
---- !u!95 &1323116588
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1323116587}
-  m_Enabled: 0
-  m_Avatar: {fileID: 9000000, guid: 089714847feb65f4ab0b8c386d012294, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1a0a451bf012b85498d2940c804634d7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1356142217
 Prefab:
   m_ObjectHideFlags: 0
@@ -3980,7 +3936,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-487002
+  m_Name: pb_Mesh19532
   serializedVersion: 8
   m_SubMeshes: []
   m_Shapes:

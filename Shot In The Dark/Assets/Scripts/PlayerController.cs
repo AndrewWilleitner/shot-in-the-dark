@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
 
 	Animator anim;
+	private Transform modelTransform;
     private Rigidbody playerRigidbody;
     private Transform cameraTransform;
 
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody selectedRetrievalStoneRigidbody;
 
     private Quaternion desiredCameraRotation;
+	private Quaternion desiredModelRotation;
 
 
 
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
     {
 
 		anim = transform.Find ("sitdT-Pose").GetComponent<Animator> ();
+		modelTransform = transform.Find ("sitdT-Pose").transform;
         playerRigidbody = transform.GetComponent<Rigidbody>();
         cameraTransform = transform.Find("Main Camera");
 
@@ -82,10 +85,13 @@ public class PlayerController : MonoBehaviour
         playerRigidbody.MovePosition(transform.position + movement);
         playerRigidbody.MoveRotation(Quaternion.Lerp(transform.rotation, desiredCameraRotation, 10f * Time.deltaTime));
 
-		if (movement == Vector3.zero) 
+		if (movement == Vector3.zero) {
 			anim.SetBool ("walk", false);
-		else
+		} else {
+			desiredModelRotation = Quaternion.LookRotation (movement);
 			anim.SetBool ("walk", true);
+		}
+		modelTransform.rotation = desiredModelRotation;
     }
 
 
