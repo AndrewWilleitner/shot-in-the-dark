@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -202,9 +202,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1696318894}
 --- !u!114 &31713540
@@ -1016,9 +1016,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1751304543}
 --- !u!114 &106485275
@@ -1453,6 +1453,7 @@ Mesh:
     firstByte: 0
     indexCount: 84
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 48
     localAABB:
@@ -1470,6 +1471,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 02000700030007000600030006000400030006000500040002000100070001000000070009000f000e0009000e0008000c000d000b000a000c000b000a000b0009000a0009000800100011001200110013001200140015001600150017001600180019001a0019001b001a001c001d001e001d001f001e00200021002200210023002200240025002600250027002600280029002a0029002b002a002c002d002e002d002f002e00
   m_Skin: []
   m_VertexData:
@@ -1605,9 +1607,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1096141995}
 --- !u!114 &154965683
@@ -2084,6 +2086,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -2101,6 +2104,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -2230,9 +2234,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 765014176}
 --- !u!114 &233206088
@@ -2685,9 +2689,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 201766052}
 --- !u!114 &253805515
@@ -3213,6 +3217,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -3230,6 +3235,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -3359,9 +3365,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1991754439}
 --- !u!114 &396041817
@@ -3814,9 +3820,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 446679363}
 --- !u!114 &432093978
@@ -4251,6 +4257,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -4268,6 +4275,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -4434,6 +4442,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -4451,6 +4460,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -4562,6 +4572,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -4579,6 +4590,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -4690,6 +4702,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -4707,6 +4720,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -4900,6 +4914,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -4917,6 +4932,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -5028,6 +5044,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -5045,6 +5062,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -5156,6 +5174,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -5173,6 +5192,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -5308,9 +5328,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 508609347}
 --- !u!114 &871175129
@@ -5763,9 +5783,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1356450383}
 --- !u!114 &879286354
@@ -6218,9 +6238,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 2038387791}
 --- !u!114 &960044392
@@ -6673,9 +6693,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 702621653}
 --- !u!114 &1029930805
@@ -7110,6 +7130,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -7127,6 +7148,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -7238,6 +7260,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -7255,6 +7278,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -7466,9 +7490,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1060230115}
 --- !u!114 &1147080642
@@ -7921,9 +7945,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 735709673}
 --- !u!114 &1149609288
@@ -8358,6 +8382,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -8375,6 +8400,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -8585,13 +8611,14 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-672364
+  m_Name: pb_Mesh-244006
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -8609,6 +8636,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -8720,6 +8748,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -8737,6 +8766,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -8971,9 +9001,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 610348607}
 --- !u!114 &1513565209
@@ -9489,6 +9519,7 @@ Mesh:
     firstByte: 0
     indexCount: 96
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 25
     localAABB:
@@ -9506,6 +9537,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200010003000200010004000300040005000300040006000500060007000500060008000700080009000700020003000a0003000b000a00030005000b0005000c000b00050007000c0007000d000c00070009000d0009000e000d000a000b000f000b0010000f000b000c0010000c00110010000c000d0011000d00120011000d000e0012000e00130012000f0010001400100015001400100011001500110016001500110012001600120017001600120013001700130018001700
   m_Skin: []
   m_VertexData:
@@ -9691,6 +9723,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -9708,6 +9741,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -9870,9 +9904,99 @@ Prefab:
       propertyPath: powerSwitches.Array.data[0]
       value: 
       objectReference: {fileID: 778181862}
+    - target: {fileID: 114476188154979366, guid: 2c9fc500e4467e940b7a2ca70155d96e,
+        type: 2}
+      propertyPath: doorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 895fbb5bed22d8647be3a9fb841d4448, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c9fc500e4467e940b7a2ca70155d96e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1909593073 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1680213771650258, guid: 2c9fc500e4467e940b7a2ca70155d96e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1909593072}
+--- !u!82 &1909593074
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909593073}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &1987130668
 Prefab:
   m_ObjectHideFlags: 0
@@ -9955,6 +10079,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -9972,6 +10097,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -10083,6 +10209,7 @@ Mesh:
     firstByte: 0
     indexCount: 36
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 24
     localAABB:
@@ -10100,6 +10227,7 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 000001000200000003000100040005000600070004000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
   m_Skin: []
   m_VertexData:
@@ -10291,9 +10419,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1184514451}
 --- !u!114 &2139126101
