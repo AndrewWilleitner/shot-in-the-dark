@@ -95,6 +95,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_13.unity
     guid: 97b9cd43f993cbb47bd93efd1532511d
+  - enabled: 1
+    path: Assets/Scenes/Level_Load_Screen_2.unity
+    guid: ecb6ac211da8ce446b243a86102f9509
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
