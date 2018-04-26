@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
         ThrowStoneClick();
         RetrieveStoneClick();
         ResetLevel();
+		MenuButton ();
     }
 
     // Update is called once per physics frame
@@ -211,6 +212,15 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKeyDown ("r") || transform.position.y < -50f) 
 		{
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+		}
+	}
+
+
+	private void MenuButton()
+	{
+		if (Input.GetKeyDown (KeyCode.Escape)) 
+		{
+			SceneManager.LoadScene ("Start_Screen");
 		}
 	}
 }
