@@ -11,11 +11,16 @@ public class DoorController : MonoBehaviour {
     private Vector3 openPos;
     private Vector3 closePos;
 
+	private AudioSource source;
+	public AudioClip doorSound;
+
     // Use this for initialization
     void Start ()
     {
         closePos = transform.position;
         openPos = transform.position + new Vector3(0,-doorHeight + 0.2f, 0);
+
+		source = GetComponent<AudioSource> ();
     }
 	
 	// Update is called once per frame
@@ -31,6 +36,10 @@ public class DoorController : MonoBehaviour {
         }
 
         DoorOpen();
+
+		if (!(transform.position == closePos || transform.position == openPos) && !source.isPlaying) {
+			source.PlayOneShot (doorSound);
+		}
 
     }
 
