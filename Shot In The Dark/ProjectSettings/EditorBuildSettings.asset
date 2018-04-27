@@ -110,3 +110,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Text_Scene.unity
+    guid: 2ded19fd5db26d54c85d84cd78c825ac

@@ -13,6 +13,10 @@ public class GoalController : MonoBehaviour {
     public Transform cameraZoomOutPoint;
     public string nextSceneName;
 
+	void Awake ()
+	{
+		CheckIfNeedToShowQuote ();
+	}
 
     // Use this for initialization
     void Start ()
@@ -32,6 +36,19 @@ public class GoalController : MonoBehaviour {
 	void Update ()
     {
 	    
+	}
+
+
+	private void CheckIfNeedToShowQuote()
+	{
+		string levelName = SceneManager.GetActiveScene ().name;
+		int levelNum = int.Parse(levelName.Substring(6, 2));
+		Debug.Log (levelNum);
+
+		if (PlayerPrefs.GetInt ("CURRENT_LEVEL_NUMBER") != levelNum) {
+			PlayerPrefs.SetInt ("CURRENT_LEVEL_NUMBER", levelNum);
+			SceneManager.LoadScene ("Text_Scene");
+		}
 	}
 
 
